@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Delivery.Vistas.Menuprincipal.Cuerpo">
+    <Grid RowDefinitions="180,*"
+          Padding="12">
+        <Frame CornerRadius="12"
+               HasShadow="False"
+               Grid.Row="1">
+            <StackLayout Margin="0,40,0,0"
+                         HorizontalOptions="Center">
+                <Label Text="{Binding descripcion}"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       TextColor="Black"/>
+                <Label Text="Hot y Spicy"
+                       />
+                <Label Text="{Binding precio}"
+                       TextColor="#EA6A8B"
+                       FontAttributes="Bold"
+                       FontSize="25"
+                       HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+        <Image Source="{Binding icono}"
+               TranslationY="40"/>
+    </Grid>
+</ContentView>

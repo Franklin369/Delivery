@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Delivery.Vistas.Menuprincipal.Encabezado">
+    <Grid>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Frame HasShadow="False"
+                       CornerRadius="60"
+                       Padding="15">
+                    <Image Source="https://i.ibb.co/gPGw754/menu.png"
+                           HeightRequest="25" />
+                </Frame>
+                <Label Text="Zomo Food"
+                       HorizontalOptions="CenterAndExpand"
+                       FontAttributes="Bold"
+                       TextColor="#34344B"
+                       VerticalOptions="Center"
+                       FontSize="20" />
+                <Frame HasShadow="False"
+                       CornerRadius="60"
+                       Padding="15">
+                    <Image Source="https://i.ibb.co/LNmFXbp/barba.png"
+                           HeightRequest="25" />
+                </Frame>
+            </StackLayout>
+            <Frame CornerRadius="50"
+                   HasShadow="False"
+                   Padding="10">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://i.ibb.co/tbZGtSV/lupa.png"
+                           HeightRequest="22"
+                           Margin="6,0,0,0" />
+                    <Label Text="Buscar..."
+                           VerticalOptions="Center"
+                           TextColor="#D1D4DF"
+                           FontAttributes="Bold"
+                           HorizontalOptions="FillAndExpand" />
+                    <Frame CornerRadius="50"
+                           HasShadow="False"
+                           Padding="10">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#FE87A5"
+                                              Offset="0.5" />
+                                <GradientStop Color="#ED6285"
+                                              Offset="0.5" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Filtro"
+                                   TextColor="White"
+                                   FontAttributes="Bold"
+                                   Margin="0,0,15,0" />
+                            <Image Source="https://i.ibb.co/SVC9XV0/filtrar.png"
+                                   HeightRequest="19" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            <Grid HeightRequest="140">
+                <Frame CornerRadius="50"
+                       HorizontalOptions="StartAndExpand"
+                       Padding="8"
+                       HasShadow="False">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#B8A6F6"
+                                          Offset="0.5" />
+                            <GradientStop Color="#8664FF"
+                                          Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout>
+                        <Frame CornerRadius="50"
+                               HasShadow="False">
+                            <Image Source="https://i.ibb.co/0cpFpv4/IMG01.png"
+                                   HeightRequest="30" />
+                        </Frame>
+                        <Label Text="Burger"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="White" 
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentView>
