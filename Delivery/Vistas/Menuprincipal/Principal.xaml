@@ -18,6 +18,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <vistas:Piepagina />
+        <vistas:Piepagina VerticalOptions="End"/>
     </Grid>
 </ContentPage>

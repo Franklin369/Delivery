@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1aVRWuVv4mHlW7kU+GLjFc4H8SMfEdLJQ65P+5pXl9ejp1MeR9XJJI2XUgvtuIKnVaKWvloS/aEWZ2SvG6yRNA==",
+  "dgSpecHash": "NkDCVa5Lugj04igFiW8iL1uZBjhLAHyu9cq++VtM/lEaWXejk09k7XM+5muHBcJR0fmjAm2kAi3TCGvBV52ntA==",
   "success": true,
   "projectFilePath": "E:\\Proyectos Xamarin\\Desafios\\Hijos\\Delivery\\Delivery.UWP\\Delivery.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Codigo 369\\.nuget\\packages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Users\\Codigo 369\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\Codigo 369\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Users\\Codigo 369\\.nuget\\packages\\microsoft.netcore.universalwindowsplatform\\6.2.12\\microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
     "C:\\Users\\Codigo 369\\.nuget\\packages\\microsoft.ui.xaml\\2.4.3\\microsoft.ui.xaml.2.4.3.nupkg.sha512",
     "C:\\Users\\Codigo 369\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

@@ -58,33 +58,48 @@
                     </Frame>
                 </StackLayout>
             </Frame>
-            <Grid HeightRequest="140">
-                <Frame CornerRadius="50"
-                       HorizontalOptions="StartAndExpand"
-                       Padding="8"
-                       HasShadow="False">
-                    <Frame.Background>
-                        <LinearGradientBrush>
-                            <GradientStop Color="#B8A6F6"
-                                          Offset="0.5" />
-                            <GradientStop Color="#8664FF"
-                                          Offset="1.0" />
-                        </LinearGradientBrush>
-                    </Frame.Background>
-                    <StackLayout>
-                        <Frame CornerRadius="50"
-                               HasShadow="False">
-                            <Image Source="https://i.ibb.co/0cpFpv4/IMG01.png"
-                                   HeightRequest="30" />
-                        </Frame>
-                        <Label Text="Burger"
-                               HorizontalOptions="Center"
-                               FontAttributes="Bold"
-                               TextColor="White" 
-                               VerticalOptions="Center"/>
-                    </StackLayout>
-                </Frame>
-            </Grid>
+            <CollectionView ItemsSource="{Binding Listacategorias}"
+                            HeightRequest="140"
+                            x:Name="listacategorias">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Path=BindingContext.Seleccionarcommand,Source={x:Reference listacategorias}}"
+                                                      CommandParameter="{Binding .}" />
+                            </Grid.GestureRecognizers>
+                            <Frame CornerRadius="50"
+                                   HorizontalOptions="StartAndExpand"
+                                   Padding="8"
+                                   HasShadow="False">
+                                <Frame.Background>
+                                    <LinearGradientBrush BindingContext="{Binding Source={RelativeSource AncestorType={x:Type Frame}},Path=BindingContext}">
+                                        <GradientStop Color="{Binding Color1}"
+                                                      Offset="0.5" />
+                                        <GradientStop Color="{Binding Color2}"
+                                                      Offset="1.0" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                                <StackLayout>
+                                    <Frame CornerRadius="50"
+                                           HasShadow="False">
+                                        <Image Source="{Binding icono}"
+                                               HeightRequest="30" />
+                                    </Frame>
+                                    <Label Text="{Binding categoria}"
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold"
+                                           TextColor="{Binding Textcolor}"
+                                           VerticalOptions="Center" />
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
     </Grid>
 </ContentView>
