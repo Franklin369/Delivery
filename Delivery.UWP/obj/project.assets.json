@@ -319,6 +319,31 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "Sharpnado.Shadows/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.UI.Xaml": "2.1.190606001",
+          "ThomasLevesque.WeakEvent": "4.1.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        }
+      },
+      "ThomasLevesque.WeakEvent/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -374,12 +399,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Sharpnado.Shadows": "1.2.0",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -886,6 +925,31 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "Sharpnado.Shadows/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.UI.Xaml": "2.1.190606001",
+          "ThomasLevesque.WeakEvent": "4.1.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        }
+      },
+      "ThomasLevesque.WeakEvent/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -930,12 +994,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Sharpnado.Shadows": "1.2.0",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -1443,6 +1521,31 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "Sharpnado.Shadows/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.UI.Xaml": "2.1.190606001",
+          "ThomasLevesque.WeakEvent": "4.1.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        }
+      },
+      "ThomasLevesque.WeakEvent/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -1487,12 +1590,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Sharpnado.Shadows": "1.2.0",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -2000,6 +2117,31 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "Sharpnado.Shadows/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.UI.Xaml": "2.1.190606001",
+          "ThomasLevesque.WeakEvent": "4.1.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        }
+      },
+      "ThomasLevesque.WeakEvent/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -2041,12 +2183,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Sharpnado.Shadows": "1.2.0",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -2553,6 +2709,31 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "Sharpnado.Shadows/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.UI.Xaml": "2.1.190606001",
+          "ThomasLevesque.WeakEvent": "4.1.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        }
+      },
+      "ThomasLevesque.WeakEvent/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -2597,12 +2778,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Sharpnado.Shadows": "1.2.0",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -3110,6 +3305,31 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "Sharpnado.Shadows/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.UI.Xaml": "2.1.190606001",
+          "ThomasLevesque.WeakEvent": "4.1.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        }
+      },
+      "ThomasLevesque.WeakEvent/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -3154,12 +3374,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Sharpnado.Shadows": "1.2.0",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -3666,6 +3900,31 @@
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
         }
       },
+      "Sharpnado.Shadows/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.UI.Xaml": "2.1.190606001",
+          "ThomasLevesque.WeakEvent": "4.1.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        }
+      },
+      "ThomasLevesque.WeakEvent/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -3710,12 +3969,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Sharpnado.Shadows": "1.2.0",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -4223,6 +4496,31 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "Sharpnado.Shadows/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.UI.Xaml": "2.1.190606001",
+          "ThomasLevesque.WeakEvent": "4.1.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll": {},
+          "lib/uap10.0.16299/Sharpnado.Shadows.dll": {}
+        }
+      },
+      "ThomasLevesque.WeakEvent/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WeakEvent.dll": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -4267,12 +4565,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Plugin.SharedTransitions/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.725"
+        },
+        "compile": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.SharedTransitions.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Sharpnado.Shadows": "1.2.0",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196"
+          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -8751,6 +9063,62 @@
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
+    "Sharpnado.Shadows/1.2.0": {
+      "sha512": "zjHTh6pZXpGb0viQ5wL5XtFrQNA5xeNzkveVAJvH8x7HLFRnUIXaJ6QzbUfeAdAL2nEAJSffcaeE3wQP6a6m0g==",
+      "type": "package",
+      "path": "sharpnado.shadows/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "images/shadows.png",
+        "lib/MonoAndroid10/Sharpnado.Shadows.Android.dll",
+        "lib/MonoAndroid10/Sharpnado.Shadows.Android.pdb",
+        "lib/MonoAndroid10/Sharpnado.Shadows.dll",
+        "lib/MonoAndroid10/Sharpnado.Shadows.pdb",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.dll",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.dll.mdb",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.iOS.pdb",
+        "lib/Xamarin.iOS10/Sharpnado.Shadows.pdb",
+        "lib/netstandard2.0/Sharpnado.Shadows.dll",
+        "lib/netstandard2.0/Sharpnado.Shadows.pdb",
+        "lib/tizen40/Sharpnado.Shadows.Tizen.dll",
+        "lib/tizen40/Sharpnado.Shadows.Tizen.pdb",
+        "lib/tizen40/Sharpnado.Shadows.dll",
+        "lib/tizen40/Sharpnado.Shadows.pdb",
+        "lib/uap10.0.16299/Sharpnado.Shadows.UWP.dll",
+        "lib/uap10.0.16299/Sharpnado.Shadows.UWP.pdb",
+        "lib/uap10.0.16299/Sharpnado.Shadows.dll",
+        "lib/uap10.0.16299/Sharpnado.Shadows.pdb",
+        "sharpnado.shadows.1.2.0.nupkg.sha512",
+        "sharpnado.shadows.nuspec"
+      ]
+    },
+    "ThomasLevesque.WeakEvent/4.1.0": {
+      "sha512": "mcp8UoYXWvPmud7UJmREULQLxLmX6SYet2pyZUHpcmIiku3JoqEilPUu9QeUZrV7fOCp0Pfva/VDhG+n3afGyg==",
+      "type": "package",
+      "path": "thomaslevesque.weakevent/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "assets/weakevent.png",
+        "lib/net40/WeakEvent.dll",
+        "lib/net40/WeakEvent.pdb",
+        "lib/net40/WeakEvent.xml",
+        "lib/net45/WeakEvent.dll",
+        "lib/net45/WeakEvent.pdb",
+        "lib/net45/WeakEvent.xml",
+        "lib/netstandard1.3/WeakEvent.dll",
+        "lib/netstandard1.3/WeakEvent.pdb",
+        "lib/netstandard1.3/WeakEvent.xml",
+        "lib/netstandard2.0/WeakEvent.dll",
+        "lib/netstandard2.0/WeakEvent.pdb",
+        "lib/netstandard2.0/WeakEvent.xml",
+        "thomaslevesque.weakevent.4.1.0.nupkg.sha512",
+        "thomaslevesque.weakevent.nuspec"
+      ]
+    },
     "Win2D.uwp/1.20.0": {
       "sha512": "sFyNT2EiV6vmEFMrkiJdSolaKNyOyk+kfjgvXN8XqUhdEPqBd2zPrFdl7SojNHQGm2Br6JLIBOdrj9fB1Qy4GA==",
       "type": "package",
@@ -9029,6 +9397,25 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Plugin.SharedTransitions/2.4.0": {
+      "sha512": "upju4Pst1knGfdLQWWjT4ASuKQk2s7RhK8B4Yw6TILRerPZmhPmqJ/fV8NIR6HuLIsX8CxOg8fR+tNjOC6YwFA==",
+      "type": "package",
+      "path": "xamarin.plugin.sharedtransitions/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.SharedTransitions.dll",
+        "lib/monoandroid10.0/Plugin.SharedTransitions.xml",
+        "lib/monoandroid90/Plugin.SharedTransitions.dll",
+        "lib/monoandroid90/Plugin.SharedTransitions.xml",
+        "lib/netstandard2.0/Plugin.SharedTransitions.dll",
+        "lib/netstandard2.0/Plugin.SharedTransitions.xml",
+        "lib/xamarinios10/Plugin.SharedTransitions.dll",
+        "lib/xamarinios10/Plugin.SharedTransitions.xml",
+        "xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512",
+        "xamarin.plugin.sharedtransitions.nuspec"
+      ]
+    },
     "Delivery/1.0.0": {
       "type": "project",
       "path": "../Delivery/Delivery.csproj",
@@ -9039,8 +9426,10 @@
     "UAP,Version=v10.0.16299": [
       "Delivery >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
+      "Sharpnado.Shadows >= 1.2.0",
       "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Forms >= 5.0.0.2196"
+      "Xamarin.Forms >= 5.0.0.2196",
+      "Xamarin.Plugin.SharedTransitions >= 2.4.0"
     ]
   },
   "packageFolders": {
@@ -9089,6 +9478,10 @@
             "target": "Package",
             "version": "[6.2.12, )"
           },
+          "Sharpnado.Shadows": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
@@ -9096,6 +9489,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2196, )"
+          },
+          "Xamarin.Plugin.SharedTransitions": {
+            "target": "Package",
+            "version": "[2.4.0, )"
           }
         },
         "imports": [

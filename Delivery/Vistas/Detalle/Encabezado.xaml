@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Delivery.Vistas.Detalle.Encabezado"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <StackLayout Orientation="Horizontal"
+                 Margin="20">
+        <sombras:Shadows CornerRadius="60"
+                         Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#EEEBFC,BlurRadius=15}">
+            <Frame HasShadow="False"
+                   CornerRadius="60"
+                   Padding="15">
+                <Image Source="https://i.ibb.co/swzZ73h/flecha-izquierda.png"
+                       HeightRequest="25" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Volvercommand}"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+        </sombras:Shadows>
+        <Label Text="Detalle"
+               HorizontalOptions="CenterAndExpand"
+               FontAttributes="Bold"
+               TextColor="#34344B"
+               VerticalOptions="Center"
+               FontSize="20" />
+        <sombras:Shadows CornerRadius="60"
+                         Shades="{sombras:SingleShade Offset='0,15', Opacity=1.0,Color=#EEEBFC,BlurRadius=15}">
+            <Frame HasShadow="False"
+                   CornerRadius="60"
+                   Padding="15">
+                <Image Source="https://i.ibb.co/HXgqpTm/compartir-2.png"
+                       HeightRequest="25" />
+            </Frame>
+        </sombras:Shadows>
+    </StackLayout>
+</ContentView>

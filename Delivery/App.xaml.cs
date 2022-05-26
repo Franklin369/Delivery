@@ -1,7 +1,9 @@
 ﻿using System;
 
+using Delivery.Vistas.Detalle;
 using Delivery.Vistas.Menuprincipal;
 
+using Plugin.SharedTransitions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,7 +15,7 @@ namespace Delivery
       {
       InitializeComponent();
 
-      MainPage=new Principal();
+      MainPage=new SharedTransitionNavigationPage(new Principal());
       }
 
     protected override void OnStart()

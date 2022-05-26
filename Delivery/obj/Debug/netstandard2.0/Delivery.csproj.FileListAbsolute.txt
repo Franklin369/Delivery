@@ -16,3 +16,7 @@ E:\Proyectos Xamarin\Desafios\Hijos\Delivery\Delivery\obj\Debug\netstandard2.0\D
 E:\Proyectos Xamarin\Desafios\Hijos\Delivery\Delivery\obj\Debug\netstandard2.0\refint\Delivery.dll
 E:\Proyectos Xamarin\Desafios\Hijos\Delivery\Delivery\obj\Debug\netstandard2.0\Delivery.pdb
 E:\Proyectos Xamarin\Desafios\Hijos\Delivery\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
+E:\Proyectos Xamarin\Desafios\Hijos\Delivery\Delivery\obj\Debug\netstandard2.0\Vistas\Detalle\Cuerpo.xaml.g.cs
+E:\Proyectos Xamarin\Desafios\Hijos\Delivery\Delivery\obj\Debug\netstandard2.0\Vistas\Detalle\Detalleproduct.xaml.g.cs
+E:\Proyectos Xamarin\Desafios\Hijos\Delivery\Delivery\obj\Debug\netstandard2.0\Vistas\Detalle\Encabezado.xaml.g.cs
+E:\Proyectos Xamarin\Desafios\Hijos\Delivery\Delivery\obj\Debug\netstandard2.0\Vistas\Detalle\Piepagina.xaml.g.cs

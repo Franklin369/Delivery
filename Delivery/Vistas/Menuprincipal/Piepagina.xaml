@@ -1,10 +1,44 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Delivery.Vistas.Menuprincipal.Piepagina">
-  <ContentView.Content>
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
-  </ContentView.Content>
+             x:Class="Delivery.Vistas.Menuprincipal.Piepagina"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+    <Grid HeightRequest="80"
+          BackgroundColor="White">
+        <sombras:Shadows CornerRadius="50"
+                         Shades="{sombras:SingleShade   Offset='0,10' ,Opacity=0.6,Color=#8765FF,BlurRadius=30}"
+                         >
+             <Frame HorizontalOptions="Center"
+               HeightRequest="35"
+               WidthRequest="35"
+               VerticalOptions="Center"
+               CornerRadius="40"
+               TranslationY="-40">
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="1,0">
+                    <GradientStop Color="#B5A2FE"
+                                  Offset="0.5" />
+                    <GradientStop Color="#8A67FF"
+                                  Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Image Source="https://i.ibb.co/Mp3gQM0/bolsa-de-la-compra.png"
+                    />
+        </Frame>
+        </sombras:Shadows>
+        <StackLayout Orientation="Horizontal"
+                     Margin="30,0"
+                     Spacing="50">
+            <Image Source="https://i.ibb.co/LzwFDf9/casa-1.png"
+                   HeightRequest="28"/>
+            <Image Source="https://i.ibb.co/02rvcmj/pin-de-mapa.png"
+                   HeightRequest="28" />
+            <BoxView BackgroundColor="Transparent"
+                     HorizontalOptions="CenterAndExpand"/>
+            <Image Source="https://i.ibb.co/HYS75Pr/google-docs.png"
+                   HeightRequest="28" />
+            <Image Source="https://i.ibb.co/Sw8cZMd/configuraciones.png"
+                   HeightRequest="28" />
+        </StackLayout>
+    </Grid>
 </ContentView>

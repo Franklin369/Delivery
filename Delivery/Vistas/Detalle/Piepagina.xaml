@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Delivery.Vistas.Detalle.Piepagina">
+    <Grid BackgroundColor="White">
+        <Frame HorizontalOptions="Center"
+               CornerRadius="50"
+               Margin="18"
+               HasShadow="False"
+               Padding="8">
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="1,0">
+                    <GradientStop Color="#B7A4FF"
+                                  Offset="0.5" />
+                    <GradientStop Color="#8866FE"
+                                  Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid ColumnDefinitions="auto,*,auto">
+                <Frame CornerRadius="50"
+                       Padding="10"
+                       HasShadow="False">
+                    <Image Source="https://i.ibb.co/S0bg0WW/bolsa-de-la-compra-1.png"
+                           HeightRequest="30"/>
+                </Frame>
+                <Label Text="Agregar al Carrito"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="18"
+                       Margin="10,0"
+                       TextColor="White"
+                       FontAttributes="Bold"/>
+                <Image Source="https://i.ibb.co/N2Vv2Bc/adelante.png"
+                       HeightRequest="40"
+                       Grid.Column="2"/>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentView>

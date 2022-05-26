@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Delivery.Vistas.Detalle.Cuerpo"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             xmlns:transicion="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions">
+    <StackLayout>
+        <Grid TranslationY="-40">
+            <sombras:Shadows CornerRadius="200"
+                             Shades="{sombras:SingleShade   Offset='10,30' ,Opacity=1.0,Color=#F8F6FF,BlurRadius=20}">
+                <Ellipse Stroke="White"
+                         StrokeThickness="30"
+                         Aspect="UniformToFill"/>
+            </sombras:Shadows>
+          
+            <sombras:Shadows CornerRadius="20"
+                             Shades="{sombras:SingleShade   Offset='0,15' ,Opacity=0.4,Color=#FDD140,BlurRadius=40}">
+                <BoxView BackgroundColor="Transparent"
+                         Margin="60"
+                         VerticalOptions="End"
+                         HorizontalOptions="Center"
+                         WidthRequest="100" />
+            </sombras:Shadows>
+            <Image Source="{Binding ParametrosRecibe.icono}"
+                   Margin="60"
+                   transicion:Transition.Name="imgtransicion"
+                   x:Name="img"/>
+            <sombras:Shadows CornerRadius="50"
+                             Shades="{sombras:SingleShade   Offset='0,10' ,Opacity=0.55,Color=#FD88A3,BlurRadius=20}"
+                             TranslationY="18">
+                <Frame VerticalOptions="End"
+                       HorizontalOptions="Center"
+                       HeightRequest="60"
+                       Padding="15,0"
+                       WidthRequest="120"
+                       CornerRadius="50"
+                       HasShadow="False">
+                    <Frame.Background>
+                        <LinearGradientBrush StartPoint="1,0">
+                            <GradientStop Color="#FC86A4"
+                                          Offset="0.5" />
+                            <GradientStop Color="#E85B7F"
+                                          Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="+"
+                               VerticalOptions="Center"
+                               FontSize="35"
+                               TextColor="White" />
+                        <Grid HorizontalOptions="CenterAndExpand">
+                            <BoxView BackgroundColor="White"
+                                     VerticalOptions="Center"
+                                     CornerRadius="30" />
+                            <Label Text="2"
+                                   VerticalOptions="Center"
+                                   FontAttributes="Bold"
+                                   FontSize="Medium"
+                                   TextColor="#22223D"
+                                   HorizontalOptions="Center" />
+                        </Grid>
+                        <Label Text="-"
+                               VerticalOptions="Center"
+                               FontSize="35"
+                               TextColor="White" />
+                    </StackLayout>
+                </Frame>
+            </sombras:Shadows>
+            <Frame HeightRequest="70"
+                   VerticalOptions="Start"
+                   HasShadow="False"
+                   Padding="14,0"
+                   CornerRadius="50"
+                   HorizontalOptions="End"
+                   WidthRequest="130"
+                   Margin="0,0,30,0"
+                   TranslationY="40">
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center">
+                    <Label Text="Pier Pice:"
+                           FontAttributes="Bold"
+                           FontSize="13" />
+                    <Label Text="{Binding ParametrosRecibe.precio}"
+                           TextColor="#E85B7F"
+                           FontAttributes="Bold"
+                           FontSize="22" />
+                </StackLayout>
+            </Frame>
+        </Grid>
+        <Label Text="{Binding ParametrosRecibe.descripcion}"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               FontSize="Title"
+               TextColor="#22223D" />
+        <Label Text="Spicy y Greens"
+               HorizontalOptions="Center"
+               FontSize="Title" />
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
+            <Label Text="Visgan flavour" />
+            <Image Source="https://i.ibb.co/xhfqy66/taco.png"
+                   HeightRequest="22" />
+        </StackLayout>
+        <Grid ColumnDefinitions="*,*"
+              Margin="50,25">
+            <sombras:Shadows CornerRadius="60"
+                             Shades="{sombras:SingleShade   Offset='0,30' ,Opacity=0.2,Color=#A1A1A1,BlurRadius=80}"
+                             Margin="0,0,5,0">
+                <Frame CornerRadius="60"
+                       HasShadow="False">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://i.ibb.co/xhfqy66/taco.png"
+                               HeightRequest="45" />
+                        <StackLayout>
+                            <Label Text="15-20 Min"
+                                   FontAttributes="Bold" />
+                            <Label Text="Delivery" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </sombras:Shadows>
+            <sombras:Shadows CornerRadius="60"
+                             Shades="{sombras:SingleShade   Offset='0,30' ,Opacity=0.2,Color=#A1A1A1,BlurRadius=80}"
+                             Margin="0,0,5,0"
+                             Grid.Column="1">
+                <Frame CornerRadius="60"
+                       HasShadow="False">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://i.ibb.co/xhfqy66/taco.png"
+                               HeightRequest="45" />
+                        <StackLayout>
+                            <Label Text="15-20 Min"
+                                   FontAttributes="Bold" />
+                            <Label Text="Delivery" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </sombras:Shadows>
+        </Grid>
+    </StackLayout>
+</ContentView>

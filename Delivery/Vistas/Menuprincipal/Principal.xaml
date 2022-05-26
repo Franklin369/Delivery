@@ -2,9 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Delivery.Vistas.Menuprincipal.Principal"
-             xmlns:vistas="clr-namespace:Delivery.Vistas.Menuprincipal">
+             xmlns:vistas="clr-namespace:Delivery.Vistas.Menuprincipal"
+             NavigationPage.HasNavigationBar="False">
     <Grid BackgroundColor="#F7F7F7">
-        <CollectionView ItemsSource="{Binding Listaplatos}">
+        <CollectionView ItemsSource="{Binding Listaplatos}"
+                        x:Name="listaplatos"
+                        Margin="18,18,18,100"
+                        >
             <CollectionView.Header>
                 <vistas:Encabezado />
             </CollectionView.Header>
@@ -14,7 +18,12 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <vistas:Cuerpo />
+                    <vistas:Cuerpo>
+                        <vistas:Cuerpo.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Path=BindingContext.SeleccionarplatoCommand,Source={x:Reference listaplatos}}"
+                                                  CommandParameter="{Binding .}" />
+                        </vistas:Cuerpo.GestureRecognizers>
+                    </vistas:Cuerpo>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

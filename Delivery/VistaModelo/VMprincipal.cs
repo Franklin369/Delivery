@@ -9,10 +9,11 @@ using System.Windows.Input;
 using Delivery.Datos;
 using Delivery.Modelo;
 using Delivery.VistaModelo;
+using Delivery.Vistas.Detalle;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
-
+using Plugin.SharedTransitions;
 namespace Delivery.VistaModelo
   {
   public class VMprincipal : BaseViewModel
@@ -76,11 +77,21 @@ namespace Delivery.VistaModelo
       var funcion = new Dplatos();
       Listaplatos=funcion.Listarplatos();
       }
-  
+    private async void SeleccionarPlato(Mplatos parametros)
+      {
+      
+      var page = (App.Current.MainPage as SharedTransitionNavigationPage).CurrentPage;
+      SharedTransitionNavigationPage.SetTransitionDuration(page,1000);
+      SharedTransitionNavigationPage.SetBackgroundAnimation(page,BackgroundAnimation.SlideFromLeft);
+      SharedTransitionNavigationPage.SetTransitionSelectedGroup(page,parametros.Id);
+      await Navigation.PushAsync(new Detalleproduct(parametros));
+      }
+
     #endregion
     #region COMANDOS
 
     public ICommand Seleccionarcommand => new Command<Mcategorias>(Seleccionar);
+    public ICommand SeleccionarplatoCommand => new Command<Mplatos>(SeleccionarPlato);
     #endregion
     }
   }

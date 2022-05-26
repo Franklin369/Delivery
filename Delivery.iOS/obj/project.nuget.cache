@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "VmGk5RTfmzEG5pLuqc/alVaBF5G/DPxtdANDuQoAiDkngFtYFM7mKsikx9sFE0aJaj/J56B0Pwv+ofriqzceOw==",
+  "dgSpecHash": "hU5Cd8gwr4MAO5vT5Guxl1k5BrPu0LHWseZUdf2TrWVKY0IGra1Jmc5/Zk9w8JkzESjLYJFpMDCY+SF4lpXznw==",
   "success": true,
   "projectFilePath": "E:\\Proyectos Xamarin\\Desafios\\Hijos\\Delivery\\Delivery.iOS\\Delivery.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Codigo 369\\.nuget\\packages\\sharpnado.shadows\\1.2.0\\sharpnado.shadows.1.2.0.nupkg.sha512",
     "C:\\Users\\Codigo 369\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Codigo 369\\.nuget\\packages\\thomaslevesque.weakevent\\4.1.0\\thomaslevesque.weakevent.4.1.0.nupkg.sha512",
     "C:\\Users\\Codigo 369\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Codigo 369\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\Codigo 369\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\Codigo 369\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }
