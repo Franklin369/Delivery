@@ -10,25 +10,27 @@
                              Shades="{sombras:SingleShade   Offset='10,30' ,Opacity=1.0,Color=#F8F6FF,BlurRadius=20}">
                 <Ellipse Stroke="White"
                          StrokeThickness="30"
-                         Aspect="UniformToFill"/>
+                         Aspect="UniformToFill" />
             </sombras:Shadows>
-          
-            <sombras:Shadows CornerRadius="20"
-                             Shades="{sombras:SingleShade   Offset='0,15' ,Opacity=0.4,Color=#FDD140,BlurRadius=40}">
-                <BoxView BackgroundColor="Transparent"
+            <sombras:Shadows CornerRadius="100"
+                             Shades="{sombras:SingleShade   Offset='0,15' ,Opacity=0.4,Color=#FDD140,BlurRadius=100}">
+                <BoxView BackgroundColor="Black"
                          Margin="60"
                          VerticalOptions="End"
                          HorizontalOptions="Center"
-                         WidthRequest="100" />
+                         WidthRequest="100"
+                         CornerRadius="100"
+                         Opacity="0"/>
             </sombras:Shadows>
             <Image Source="{Binding ParametrosRecibe.icono}"
                    Margin="60"
                    transicion:Transition.Name="imgtransicion"
-                   x:Name="img"/>
+                   x:Name="img" />
             <sombras:Shadows CornerRadius="50"
                              Shades="{sombras:SingleShade   Offset='0,10' ,Opacity=0.55,Color=#FD88A3,BlurRadius=20}"
-                             TranslationY="18">
-                <Frame VerticalOptions="End"
+                             TranslationY="18"
+                             VerticalOptions="End">
+                <Frame 
                        HorizontalOptions="Center"
                        HeightRequest="60"
                        Padding="15,0"
@@ -102,12 +104,15 @@
                    HeightRequest="22" />
         </StackLayout>
         <Grid ColumnDefinitions="*,*"
-              Margin="50,25">
+              >
             <sombras:Shadows CornerRadius="60"
                              Shades="{sombras:SingleShade   Offset='0,30' ,Opacity=0.2,Color=#A1A1A1,BlurRadius=80}"
-                             Margin="0,0,5,0">
+                             Margin="10,0,10,15">
                 <Frame CornerRadius="60"
-                       HasShadow="False">
+                       HasShadow="False"
+                       
+                       Padding="10,5"
+                       VerticalOptions="Center">
                     <StackLayout Orientation="Horizontal">
                         <Image Source="https://i.ibb.co/xhfqy66/taco.png"
                                HeightRequest="45" />
@@ -121,10 +126,13 @@
             </sombras:Shadows>
             <sombras:Shadows CornerRadius="60"
                              Shades="{sombras:SingleShade   Offset='0,30' ,Opacity=0.2,Color=#A1A1A1,BlurRadius=80}"
-                             Margin="0,0,5,0"
+                             Margin="10,0,10,15"
                              Grid.Column="1">
                 <Frame CornerRadius="60"
-                       HasShadow="False">
+                       HasShadow="False"
+                      
+                       Padding="10,5"
+                       VerticalOptions="Center">
                     <StackLayout Orientation="Horizontal">
                         <Image Source="https://i.ibb.co/xhfqy66/taco.png"
                                HeightRequest="45" />

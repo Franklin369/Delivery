@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Delivery.Vistas.Detalle.Piepagina">
+             x:Class="Delivery.Vistas.Detalle.Piepagina"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
     <Grid BackgroundColor="White">
-        <Frame HorizontalOptions="Center"
+        <sombras:Shadows CornerRadius="30"
+                         Shades="{sombras:SingleShade   Offset='0,10' ,Opacity=0.4,Color=#8765FF,BlurRadius=20}">
+              <Frame HorizontalOptions="Center"
                CornerRadius="50"
                Margin="18"
                HasShadow="False"
@@ -36,5 +39,7 @@
                        Grid.Column="2"/>
             </Grid>
         </Frame>
+        </sombras:Shadows>
+          
     </Grid>
 </ContentView>

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Delivery.Vistas.Menuprincipal.Cuerpo"
              xmlns:transicion="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions">
+   
     <Grid RowDefinitions="180,*"
           Padding="12"
           >

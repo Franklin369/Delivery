@@ -4,9 +4,13 @@
              x:Class="Delivery.Vistas.Detalle.Detalleproduct"
              xmlns:vistas="clr-namespace:Delivery.Vistas.Detalle"
              NavigationPage.HasNavigationBar="False">
+    
     <Grid BackgroundColor="White">
         <vistas:Encabezado VerticalOptions="Start"/>
-        <vistas:Cuerpo VerticalOptions="CenterAndExpand"/>
+       
+               <vistas:Cuerpo VerticalOptions="CenterAndExpand"/>
+        
+     
         <vistas:Piepagina VerticalOptions="End"/>
     </Grid>
 </ContentPage>
